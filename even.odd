@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+class Number
+{
+public:
+    int n;
+
+    void input()
+    {
+        cout << "Enter a number: ";
+        cin >> n;
+    }
+
+    void check()
+    {
+        if (n % 2 == 0)
+            cout << "Even Number";
+        else
+            cout << "Odd Number";
+    }
+};
+
+int main()
+{
+    Number obj;
+
+    obj.input();
+    obj.check();
+
+    return 0;
+}
